@@ -1,0 +1,333 @@
+html, body {
+    height: 100%;
+}
+
+.home__page {
+    background-image: url("../../assets/images/header-background.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.register__page {
+    background-image: url("../img/blue-pink-bg.svg");
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handpointer {
+    cursor: pointer;
+}
+
+.auth__card {
+    padding: 50 px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__form {
+    width: 300px;
+    height: 150px;
+}
+
+.login__page {
+    background-image: url("../../assets/images/blue-pink-bg.svg");
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-table {
+    color: #000;
+    overflow: hidden;
+    width: 60%;
+    border-radius: 5px;
+    background-color: #eaebee;
+}
+
+.responsive-table tr {
+    border-bottom: 1px solid #dcdfe5;
+    background: rgba(231, 221, 221, 0.479); 
+}
+
+.responsive-table th, .responsive-table td {
+    padding-left: 5px !important;
+    background: rgba(231, 221, 221, 0.479); 
+}
+
+.responsive-table tr:last-child {
+    border-bottom: 0px;
+    background: rgba(231, 221, 221, 0.479); 
+}
+
+a, a:active, a:focus {
+    outline: none;
+}
+
+.bgOrg {
+    background-color: #a52666;
+    color: #fff;
+}
+
+.transfer__form__box {
+    background-image: linear-gradient(to bottom right,rgb(52, 204, 198), #a5c4bd);
+    border-right: 1px solid #DEE8EF;
+    float: left;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-right: 50px;
+    width: 35;
+    height: 50;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__switch {
+    float: left;
+    color: #4c8492;
+}
+.transfer__form {
+    border: 0px;
+    padding: 20px 30px;
+    width: 70%;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: hidden;
+    border: hidden;
+    padding-left: 10%;
+    padding-top: 10%
+}
+
+.transfer__form input {
+    border-width: 0px;
+    font-size: 18px;
+    margin: 8px
+}
+
+.transfer__form button {
+    border-width: 0px;
+    background-color: #ff8858;
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+}
+
+.bgOrg {
+    background-color: #4c8492;
+    color: #fff;
+    text-align:center;
+}
+
+.transactions__list {
+    background: rgba(231, 221, 221, 0.479); 
+    font-size: 15px;
+    float: left;
+    width: 45%;
+    margin-top: 80px;
+    object-position: right top;
+    margin-right: 12%;
+    margin-left: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.transaction__detail div {
+    width: 700px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 5%;
+    border: 1px #4c8492;
+    border-radius: 5px;
+    box-shadow: 0 3px 7px -1px rgba(#fff, .5);
+}
+
+.transaction__detail table {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    min-width: 500px;
+    border-collapse: collapse;
+    font-weight: bold;
+    color: white;
+}
+
+.transaction__detail td {
+    padding: 20px;
+    border-bottom: rgba(0, 0, 0, .05) 1px solid;
+
+}
+
+.transaction__detail .table_row {
+    height: 50px;
+    border-bottom: rgba(0, 0, 0, .05) 1px solid;
+    width: 100%;
+}
+
+.transaction__detail .table_row th {
+    padding: 5px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+
+
+.transaction__detail .title_row th{
+    height: 50px;
+    color: #f6f3f7;
+    background: #418a95;
+    font-size: 15px;
+    border: 0px solid;
+    text-align: center;
+    padding: 15px;
+}
+
+.detail__close {
+    margin-left: 600px;
+    padding-top: 30px;
+    background-color: #4c8492;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.detail__close:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.detail__row {
+    text-align: center;
+
+}
+
+.sortorder:after {
+    content: '\25b2';
+}
+
+.sortorder.reverse:after {
+    content: '\25bc';
+}
+
+.transactions__options {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+}
+
+.transactions__options div {
+    align-items: right;
+}
+
+.transactions__options tr {
+    padding: 20px !important;
+}
+
+.transactions__options input {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.transfer__form input {
+    margin: 10px;
+}
+
+.sort__button {
+    margin: 10px !important;
+    background-color: #4c8492;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    height: 60px;
+}
+
+.header__fixed {
+    background: rgba(231, 221, 221, 0.479); 
+    height: inherit;
+    position: fixed;
+    top: 0;
+    left:  0;
+    right: 0;
+    border-bottom: 1px solid #E9EEF3;
+    padding: 13px 20px;
+    font-size: 16px;
+}
+
+.header__brand {
+    font-size: 24px;
+    float: left;
+}
+
+.header__logout {
+    float: right;
+}
+
+.header__logout a {
+    display: inline-block;
+    color: #E32E30;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.header__button {
+    font-size: 16px;
+}
+
+.header__button .material-icons {
+    font-size: inherit;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}
+
+.header__logo {
+    display: block;
+    height: 40px;
+    width: 115px;
+    margin-left: 65px;
+    padding-bottom: 7px;
+    padding-top: 3px;
+    opacity: 75%;
+}
+
+.special__select {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 9px;
+    width: 224px;
+    height: 26px;
+    border: 0;
+}
+
+.status__update {
+    margin-left: 5px !important;
+}
+
+.status__update label {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}

@@ -1,26 +1,27 @@
 angular
-  .module('peachtree', ['ui.router'])
+  .module('peachtree', ['ui.router', 'Authentication'])
 
 
   .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     console.log('app.js - config');
     $stateProvider
-      .state("landing", {
-        url: "/landing",
-        templateUrl: "components/landing/landing.html",
-        controller: "LandingController",
-        data: {
-          requiredAuth: false
-        },
-      })
-      .state("login", {
-        url: "/login",
-        templateUrl: "auth/login/login.html",
-        controller: "LoginController",
-        data: {
-          requiredAuth: false
-        },
-      })
+    .state("login", {
+      url: "/login",
+      templateUrl: "components/authentication/login/login.html",
+      controller: "LoginController",
+      data: {
+        requiredAuth: false
+      },
+    })
+
+    .state("register", {
+      url: "/register",
+      templateUrl: "components/authentication/register/register.html",
+      controller: "RegisterController", 
+      data: {
+        requiredAuth: false
+      },
+    })
 
     $urlRouterProvider.otherwise('/landing');
   }
